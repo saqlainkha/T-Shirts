@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed": "#3a0b00", "surface-tint": "#b0d500", "outline": "#8f9378", "on-surface": "#e5e2e1", "on-secondary-fixed-variant": "#852400", "secondary-fixed-dim": "#ffb59e", "on-primary": "#2a3400", "tertiary": "#ffffff", "secondary-fixed": "#ffdbd0", "on-primary-fixed": "#171e00", "surface-container": "#201f1f", "surface-bright": "#3a3939", "surface-container-low": "#1c1b1b", "primary-container": "#caf300", "error": "#ffb4ab", "on-tertiary": "#2f3132", "outline-variant": "#444932", "on-tertiary-container": "#636466", "on-background": "#e5e2e1", "secondary": "#ffb59e", "on-error-container": "#ffdad6", "background": "#131313", "inverse-surface": "#e5e2e1", "on-tertiary-fixed-variant": "#454748", "on-primary-container": "#596c00", "secondary-container": "#ff571a", "on-secondary": "#5e1700", "on-secondary-container": "#521300", "surface-container-highest": "#353534", "tertiary-container": "#e2e2e3", "inverse-on-surface": "#313030", "on-tertiary-fixed": "#1a1c1d", "primary": "#ffffff", "on-error": "#690005", "surface-variant": "#353534", "primary-fixed-dim": "#b0d500", "on-primary-fixed-variant": "#3e4c00", "surface-dim": "#131313", "tertiary-fixed": "#e2e2e3", "surface": "#131313", "surface-container-high": "#2a2a2a", "inverse-primary": "#536600", "on-surface-variant": "#c5c9ac", "tertiary-fixed-dim": "#c6c6c7", "primary-fixed": "#caf300", "error-container": "#93000a", "surface-container-lowest": "#0e0e0e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "4rem", "gutter-mobile": "0.75rem", "space-md": "1rem", "space-sm": "0.5rem", "margin-mobile": "1.25rem", "gutter": "1.5rem", "space-xs": "0.25rem", "margin": "3rem", "space-lg": "2rem" }, "fontFamily": { "headline-md-mobile": [ "Anton" ], "headline-lg-mobile": [ "Anton" ], "headline-sm": [ "Anton" ], "display-xl": [ "Anton" ], "headline-lg": [ "Anton" ], "body-md": [ "Inter" ], "label-lg": [ "Inter" ], "label-md": [ "Inter" ], "headline-md": [ "Anton" ], "body-sm": [ "Inter" ], "display-xl-mobile": [ "Anton" ], "body-lg": [ "Inter" ], "label-sm": [ "Inter" ] }, "fontSize": { "headline-md-mobile": [ "28px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-lg-mobile": [ "36px", { "lineHeight": "40px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-sm": [ "24px", { "lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "400" } ], "display-xl": [ "96px", { "lineHeight": "96px", "letterSpacing": "-0.02em", "fontWeight": "400" } ], "headline-lg": [ "64px", { "lineHeight": "64px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" } ], "headline-md": [ "40px", { "lineHeight": "44px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "display-xl-mobile": [ "56px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "12px", "letterSpacing": "0.1em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl"><div class="bg-surface-container-lowest text-on-surface py-2 px-margin-mobile lg:px-margin text-center tracking-widest uppercase font-label-sm text-label-sm border-b border-outline-variant/30 flex items-center justify-center gap-space-sm"><span class="material-symbols-outlined text-[14px] text-primary-fixed">bolt</span><span>FREE EXPRESS SHIPPING ON ORDERS OVER $75 • 30-DAY PERFORMANCE GUARANTEE • CODE: <strong class="text-primary-fixed">KINETIC10</strong></span></div><div class="h-20 w-full px-margin-mobile lg:px-margin flex items-center justify-between"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><img alt="KINETIC Athletic Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WZc4cyDgi68XTWRpbADli_-MG7gMXAZ0MMR7T018LiKMYJZkRRf8Cu8zRYcR7GmmI1BlLelRz4vIWnincA_YLVwRYFtmWlO4pUCgzfpq-0i1ce_sfSXU9CdpvHU8sfzFsRQeirsTcYez774IpvwisQXvhfLeg9_lsonMtHUl4hPN9AT6rBd1ZcMv1_mJ8APY2qV2w_nXtk2Xp7FSO8QPT5_cGrW4PfZolxdlbSmiU"/><span class="font-headline-sm text-headline-sm uppercase text-primary tracking-tight">KINETIC</span></a><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="text-primary font-bold"><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="new-arrivals" href="#">NEW ARRIVALS</a><a aria-current="page" class="uppercase tracking-wider transition-colors py-2 text-primary font-bold" data-path="men" href="#">MEN</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="women" href="#">WOMEN</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="collections" href="#">COLLECTIONS</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="innovation" href="#">INNOVATION</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-2 flex items-center gap-1" data-path="sale" href="#"><span class="bg-secondary-container text-on-secondary px-1.5 py-0.5 text-[10px] font-bold">SALE</span></a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center bg-surface-container-low px-space-sm py-1.5"><span class="material-symbols-outlined text-[18px] text-on-surface-variant mr-2">search</span><input class="bg-transparent text-on-surface placeholder:text-on-tertiary-container text-label-sm font-label-sm uppercase focus:outline-none w-36 lg:w-48" placeholder="SEARCH GEAR..." type="text"/></div><div class="hidden sm:flex items-center gap-1 text-on-surface-variant hover:text-on-surface cursor-pointer text-label-sm font-label-sm"><span class="material-symbols-outlined text-[16px]">public</span><span>USD $</span></div><a class="relative p-2 text-on-surface-variant hover:text-on-surface transition-colors" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute top-1 right-1 bg-surface-container-highest text-on-surface text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">2</span></a><button class="relative p-2 text-on-surface-variant hover:text-on-surface transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1 right-1 bg-primary-fixed text-on-primary-fixed text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">2</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center cursor-pointer"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><div class="fixed inset-y-0 right-0 w-full sm:w-[420px] bg-surface-container-lowest z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col shadow-2xl" id="kinetic-cart-drawer"><div class="p-space-md bg-surface-container flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm uppercase text-primary">CART (2)</span><span class="material-symbols-outlined text-primary-fixed text-[20px]">electric_bolt</span></div><button class="p-1 text-on-surface-variant hover:text-on-surface" onclick="document.getElementById('kinetic-cart-drawer').classList.add('translate-x-full')"><span class="material-symbols-outlined">close</span></button></div><div class="p-space-md bg-surface-container-low"><div class="flex justify-between items-center text-label-sm font-label-sm mb-1.5"><span class="text-on-surface-variant uppercase">FREE EXPRESS SHIPPING PROGRESS</span><span class="text-primary-fixed font-bold">$15 AWAY</span></div><div class="w-full h-1.5 bg-surface-container-highest"><div class="h-full bg-primary-fixed w-[80%]"></div></div></div><div class="flex-1 overflow-y-auto p-space-md space-y-space-md"><div class="flex gap-space-sm bg-surface-container p-space-sm"><div class="w-20 h-24 bg-surface-container-high flex-shrink-0 flex items-center justify-center"><span class="material-symbols-outlined text-on-surface-variant text-[32px]">apparel</span></div><div class="flex-1 flex flex-col justify-between"><div><div class="flex justify-between items-start"><h4 class="font-label-md text-label-md uppercase text-primary">AERODRY KINETIC TEE</h4><button class="text-on-surface-variant hover:text-error"><span class="material-symbols-outlined text-[16px]">delete</span></button></div><p class="font-body-sm text-body-sm text-on-surface-variant">STEALTH BLACK / MEDIUM</p></div><div class="flex justify-between items-center"><div class="flex items-center bg-surface-container-low px-2 py-1 gap-3"><button class="text-on-surface-variant hover:text-on-surface text-label-sm">-</button><span class="font-label-sm text-label-sm text-on-surface">1</span><button class="text-on-surface-variant hover:text-on-surface text-label-sm">+</button></div><span class="font-label-md text-label-md text-primary">$42.00</span></div></div></div><div class="flex gap-space-sm bg-surface-container p-space-sm"><div class="w-20 h-24 bg-surface-container-high flex-shrink-0 flex items-center justify-center"><span class="material-symbols-outlined text-on-surface-variant text-[32px]">sprint</span></div><div class="flex-1 flex flex-col justify-between"><div><div class="flex justify-between items-start"><h4 class="font-label-md text-label-md uppercase text-primary">PROWEAVE RACING SHORT</h4><button class="text-on-surface-variant hover:text-error"><span class="material-symbols-outlined text-[16px]">delete</span></button></div><p class="font-body-sm text-body-sm text-on-surface-variant">VOLT ACCENT / SMALL</p></div><div class="flex justify-between items-center"><div class="flex items-center bg-surface-container-low px-2 py-1 gap-3"><button class="text-on-surface-variant hover:text-on-surface text-label-sm">-</button><span class="font-label-sm text-label-sm text-on-surface">1</span><button class="text-on-surface-variant hover:text-on-surface text-label-sm">+</button></div><span class="font-label-md text-label-md text-primary">$68.00</span></div></div></div></div><div class="p-space-md bg-surface-container space-y-space-sm"><div class="flex justify-between text-label-md font-label-md text-on-surface-variant"><span class="uppercase">SUBTOTAL</span><span class="text-primary">$110.00</span></div><div class="flex justify-between text-label-md font-label-md text-on-surface-variant"><span class="uppercase">SHIPPING</span><span class="text-primary-fixed">CALCULATED AT CHECKOUT</span></div><div class="pt-space-sm"><a class="w-full py-4 bg-primary-fixed hover:bg-surface-tint text-on-primary-fixed flex items-center justify-center gap-space-sm font-label-lg text-label-lg uppercase transition-colors tracking-widest" data-path="checkout" href="#"><span>PROCEED TO CHECKOUT</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></a></div></div></div><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- BREADCRUMBS & CATEGORY HERO -->
+<section class="w-full bg-surface-container-lowest px-margin-mobile lg:px-margin pt-6 pb-10">
+<div class="max-w-[1720px] mx-auto flex flex-col gap-6">
+<!-- Breadcrumb Navigation -->
+<nav class="flex items-center gap-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="text-outline text-xs">/</span>
+<a class="hover:text-primary transition-colors" href="#">Men</a>
+<span class="text-outline text-xs">/</span>
+<span class="text-primary-fixed font-bold">Performance Tops</span>
+</nav>
+<!-- Category Title Block & Telemetry Accent -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+<div class="flex flex-col gap-3 max-w-4xl">
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-container-high text-primary-fixed font-label-sm text-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-[13px]">tune</span>
+              AERODYNAMIC MATRIX V3.8
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">
+              CATALOG ID: KNT-M-TEES
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg uppercase text-primary tracking-tight">
+            MEN'S PERFORMANCE TEES &amp; TOPS
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+            Precision-engineered athletic t-shirts designed for maximum endurance, breathability, and unrestricted motion in extreme velocity training environments.
+          </p>
+</div>
+<!-- Metric Telemetry Capsule -->
+<div class="flex items-center gap-6 bg-surface-container p-4 self-start lg:self-end">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">ACTIVE SILHOUETTES</span>
+<span class="font-headline-sm text-headline-sm text-primary">24 STYLES</span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">BASE WEIGHT AVG</span>
+<span class="font-headline-sm text-headline-sm text-primary-fixed">108G</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTROL TOOLBAR & FILTER TAGS -->
+<section class="sticky top-20 z-30 w-full bg-surface-container/95 backdrop-blur-md shadow-md px-margin-mobile lg:px-margin py-4">
+<div class="max-w-[1720px] mx-auto flex flex-col gap-3">
+<!-- Top Row: Mobile filter trigger, counts, sort selector -->
+<div class="flex items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<button class="lg:hidden flex items-center gap-2 bg-primary-fixed text-on-primary-fixed px-3 py-2 font-label-md text-label-md uppercase tracking-wider" id="toggle-filter-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>FILTERS (3)</span>
+</button>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-fixed animate-pulse"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">
+              SHOWING <strong class="text-primary font-bold">24</strong> PRODUCTS
+            </span>
+</div>
+</div>
+<!-- Sort By Custom Dropdown -->
+<div class="relative flex items-center gap-2">
+<span class="hidden sm:inline font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">SORT BY:</span>
+<div class="relative">
+<select class="appearance-none bg-surface-container-high text-primary font-label-md text-label-md uppercase tracking-wider pl-3 pr-8 py-2 focus:outline-none cursor-pointer" id="sort-selector">
+<option selected="">Best Selling (Selected)</option>
+<option>Newest Arrivals</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+<option>Customer Rating</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Bottom Row: Filter Badges / Active Pills -->
+<div class="flex items-center flex-wrap gap-2 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mr-1">ACTIVE APPLIED:</span>
+<button class="group flex items-center gap-1.5 bg-surface-container-high hover:bg-surface-bright px-2.5 py-1 text-on-surface font-label-sm text-label-sm uppercase transition-colors" type="button">
+<span>SIZE: L</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant group-hover:text-primary">close</span>
+</button>
+<button class="group flex items-center gap-1.5 bg-surface-container-high hover:bg-surface-bright px-2.5 py-1 text-on-surface font-label-sm text-label-sm uppercase transition-colors" type="button">
+<span>FIT: ATHLETIC</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant group-hover:text-primary">close</span>
+</button>
+<button class="group flex items-center gap-1.5 bg-surface-container-high hover:bg-surface-bright px-2.5 py-1 text-on-surface font-label-sm text-label-sm uppercase transition-colors" type="button">
+<span>TECH: AERODRY™</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant group-hover:text-primary">close</span>
+</button>
+<button class="text-primary-fixed hover:text-surface-tint font-label-sm text-label-sm uppercase tracking-wider ml-2 underline underline-offset-4 transition-colors" type="button">
+          CLEAR ALL (3)
+        </button>
+</div>
+</div>
+</section>
+<!-- TWO-COLUMN WORKSPACE: FILTERS + 3-COLUMN PRODUCT GRID -->
+<section class="w-full px-margin-mobile lg:px-margin py-8">
+<div class="max-w-[1720px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT SIDEBAR FILTERS (Sticky Desktop) -->
+<aside class="lg:col-span-3 sticky top-36 flex flex-col gap-6 bg-surface-container-low p-6 shadow-sm" id="filter-sidebar">
+<div class="flex items-center justify-between pb-4 bg-surface-container-high px-3 py-2 -mx-3 -mt-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">filter_list</span>
+<span class="font-headline-sm text-headline-sm uppercase text-primary">PARAMETRIC FILTERS</span>
+</div>
+<button class="lg:hidden text-on-surface-variant hover:text-primary" id="close-mobile-filters" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- 1. CATEGORY / ACTIVITY -->
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-center cursor-pointer">
+<span class="font-label-lg text-label-lg uppercase text-primary tracking-wider">ACTIVITY ARCHITECTURE</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">remove</span>
+</div>
+<div class="space-y-2 pt-1 font-body-sm text-body-sm text-on-surface-variant">
+<label class="flex items-center justify-between cursor-pointer hover:text-primary transition-colors">
+<span class="flex items-center gap-2">
+<input checked="" class="w-4 h-4 bg-surface-container-highest accent-primary-fixed rounded-none cursor-pointer" type="checkbox"/>
+<span>Running &amp; Velocity Track</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline">12</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer hover:text-primary transition-colors">
+<span class="flex items-center gap-2">
+<input checked="" class="w-4 h-4 bg-surface-container-highest accent-primary-fixed rounded-none cursor-pointer" type="checkbox"/>
+<span>Gym &amp; High-Output Training</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline">08</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer hover:text-primary transition-colors">
+<span class="flex items-center gap-2">
+<input class="w-4 h-4 bg-surface-container-highest accent-primary-fixed rounded-none cursor-pointer" type="checkbox"/>
+<span>Hyrox &amp; Conditioning</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline">05</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer hover:text-primary transition-colors">
+<span class="flex items-center gap-2">
+<input class="w-4 h-4 bg-surface-container-highest accent-primary-fixed rounded-none cursor-pointer" type="checkbox"/>
+<span>Recovery &amp; Travel</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline">04</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer hover:text-primary transition-colors">
+<span class="flex items-center gap-2">
+<input class="w-4 h-4 bg-surface-container-highest accent-primary-fixed rounded-none cursor-pointer" type="checkbox"/>
+<span>Studio Mobility</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline">03</span>
+</label>
+</div>
+</div>
+<div class="h-px bg-surface-container-high w-full"></div>
+<!-- 2. FIT PROFILE -->
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-center cursor-pointer">
+<span class="font-label-lg text-label-lg uppercase text-primary tracking-wider">FIT PROFILE</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">remove</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1 font-label-sm text-label-sm uppercase">
+<button class="py-2 px-2 bg-primary text-on-primary font-bold text-center" type="button">
+              ATHLETIC SLIM
+            </button>
+<button class="py-2 px-2 bg-surface-container hover:bg-surface-bright text-on-surface text-center transition-colors" type="button">
+              REGULAR
+            </button>
+<button class="py-2 px-2 bg-surface-container hover:bg-surface-bright text-on-surface text-center transition-colors" type="button">
+              BOXY OVERSIZE
+            </button>
+<button class="py-2 px-2 bg-surface-container hover:bg-surface-bright text-on-surface text-center transition-colors" type="button">
+              MUSCLE FORM
+            </button>
+</div>
+</div>
+<div class="h-px bg-surface-container-high w-full"></div>
+<!-- 3. SIZE TILES (Grid of selectable squares) -->
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<span class="font-label-lg text-label-lg uppercase text-primary tracking-wider">METRIC SIZE</span>
+<span class="font-label-sm text-label-sm text-primary-fixed cursor-pointer hover:underline">SIZE GUIDE</span>
+</div>
+<div class="grid grid-cols-3 gap-2 pt-1 font-label-md text-label-md uppercase">
+<button class="h-11 flex items-center justify-center bg-surface-container text-on-surface hover:bg-surface-container-highest transition-colors" type="button">XS</button>
+<button class="h-11 flex items-center justify-center bg-surface-container text-on-surface hover:bg-surface-container-highest transition-colors" type="button">S</button>
+<button class="h-11 flex items-center justify-center bg-surface-container text-on-surface hover:bg-surface-container-highest transition-colors" type="button">M</button>
+<button class="h-11 flex items-center justify-center bg-primary text-on-primary font-bold" type="button">L</button>
+<button class="h-11 flex items-center justify-center bg-surface-container text-on-surface hover:bg-surface-container-highest transition-colors" type="button">XL</button>
+<button class="h-11 flex items-center justify-center bg-surface-container text-on-surface hover:bg-surface-container-highest transition-colors" type="button">XXL</button>
+</div>
+</div>
+<div class="h-px bg-surface-container-high w-full"></div>
+<!-- 4. COLOR SWATCHES -->
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<span class="font-label-lg text-label-lg uppercase text-primary tracking-wider">COLORWAY SPECTRUM</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">7 TONES</span>
+</div>
+<div class="flex flex-wrap items-center gap-3 pt-1">
+<div class="relative group cursor-pointer">
+<span class="block w-7 h-7 rounded-full bg-surface-container-lowest ring-2 ring-primary"></span>
+<span class="absolute -bottom-7 left-1/2 -translate-x-1/2 hidden group-hover:block bg-surface-container-highest text-primary font-label-sm text-label-sm px-1.5 py-0.5 whitespace-nowrap z-20">Carbon Black</span>
+</div>
+<div class="relative group cursor-pointer">
+<span class="block w-7 h-7 rounded-full bg-tertiary"></span>
+<span class="absolute -bottom-7 left-1/2 -translate-x-1/2 hidden group-hover:block bg-surface-container-highest text-primary font-label-sm text-label-sm px-1.5 py-0.5 whitespace-nowrap z-20">Chalk White</span>
+</div>
+<div class="relative group cursor-pointer">
+<span class="block w-7 h-7 rounded-full bg-primary-fixed"></span>
+<span class="absolute -bottom-7 left-1/2 -translate-x-1/2 hidden group-hover:block bg-surface-container-highest text-primary font-label-sm text-label-sm px-1.5 py-0.5 whitespace-nowrap z-20">Volt Energy</span>
+</div>
+<div class="relative group cursor-pointer">
+<span class="block w-7 h-7 rounded-full bg-surface-bright"></span>
+<span class="absolute -bottom-7 left-1/2 -translate-x-1/2 hidden group-hover:block bg-surface-container-highest text-primary font-label-sm text-label-sm px-1.5 py-0.5 whitespace-nowrap z-20">Slate Titanium</span>
+</div>
+<div class="relative group cursor-pointer">
+<span class="block w-7 h-7 rounded-full bg-on-tertiary-container"></span>
+<span class="absolute -bottom-7 left-1/2 -translate-x-1/2 hidden group-hover:block bg-surface-container-highest text-primary font-label-sm text-label-sm px-1.5 py-0.5 whitespace-nowrap z-20">Deep Navy</span>
+</div>
+<div class="relative group cursor-pointer">
+<span class="block w-7 h-7 rounded-full bg-outline-variant"></span>
+<span class="absolute -bottom-7 left-1/2 -translate-x-1/2 hidden group-hover:block bg-surface-container-highest text-primary font-label-sm text-label-sm px-1.5 py-0.5 whitespace-nowrap z-20">Tactical Olive</span>
+</div>
+<div class="relative group cursor-pointer">
+<span class="block w-7 h-7 rounded-full bg-secondary-container"></span>
+<span class="absolute -bottom-7 left-1/2 -translate-x-1/2 hidden group-hover:block bg-surface-container-highest text-primary font-label-sm text-label-sm px-1.5 py-0.5 whitespace-nowrap z-20">Crimson Blast</span>
+</div>
+</div>
+</div>
+<div class="h-px bg-surface-container-high w-full"></div>
+<!-- 5. FABRIC & TECHNOLOGY -->
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-center cursor-pointer">
+<span class="font-label-lg text-label-lg uppercase text-primary tracking-wider">TEXTILE MATRIX</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">remove</span>
+</div>
+<div class="space-y-2 pt-1 font-body-sm text-body-sm text-on-surface-variant">
+<label class="flex items-center justify-between cursor-pointer hover:text-primary transition-colors">
+<span class="flex items-center gap-2">
+<input checked="" class="w-4 h-4 bg-surface-container-highest accent-primary-fixed rounded-none cursor-pointer" type="checkbox"/>
+<span>AeroDry™ Moisture-Wick</span>
+</span>
+<span class="font-label-sm text-label-sm text-primary-fixed">LAB</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer hover:text-primary transition-colors">
+<span class="flex items-center gap-2">
+<input class="w-4 h-4 bg-surface-container-highest accent-primary-fixed rounded-none cursor-pointer" type="checkbox"/>
+<span>ProSeamless™ Anti-Chafe</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline">09</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer hover:text-primary transition-colors">
+<span class="flex items-center gap-2">
+<input class="w-4 h-4 bg-surface-container-highest accent-primary-fixed rounded-none cursor-pointer" type="checkbox"/>
+<span>Thermal Vent Micro-Mesh</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline">06</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer hover:text-primary transition-colors">
+<span class="flex items-center gap-2">
+<input class="w-4 h-4 bg-surface-container-highest accent-primary-fixed rounded-none cursor-pointer" type="checkbox"/>
+<span>Heavyweight Combed Tech Cotton</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline">04</span>
+</label>
+</div>
+</div>
+<div class="h-px bg-surface-container-high w-full"></div>
+<!-- 6. PRICE RANGE -->
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<span class="font-label-lg text-label-lg uppercase text-primary tracking-wider">PRICE RANGE</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">$45 - $110</span>
+</div>
+<div class="space-y-2 pt-1 font-body-sm text-body-sm text-on-surface-variant">
+<label class="flex items-center justify-between cursor-pointer hover:text-primary transition-colors">
+<span class="flex items-center gap-2">
+<input class="w-4 h-4 bg-surface-container-highest accent-primary-fixed rounded-none cursor-pointer" type="checkbox"/>
+<span>Under $50</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline">03</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer hover:text-primary transition-colors">
+<span class="flex items-center gap-2">
+<input checked="" class="w-4 h-4 bg-surface-container-highest accent-primary-fixed rounded-none cursor-pointer" type="checkbox"/>
+<span>$50 — $75</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline">14</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer hover:text-primary transition-colors">
+<span class="flex items-center gap-2">
+<input class="w-4 h-4 bg-surface-container-highest accent-primary-fixed rounded-none cursor-pointer" type="checkbox"/>
+<span>$75 — $100</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline">05</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer hover:text-primary transition-colors">
+<span class="flex items-center gap-2">
+<input class="w-4 h-4 bg-surface-container-highest accent-primary-fixed rounded-none cursor-pointer" type="checkbox"/>
+<span>$100+ Ultra Elite</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline">02</span>
+</label>
+</div>
+</div>
+<button class="w-full mt-2 py-3 bg-surface-container-highest hover:bg-surface-bright text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors text-center" type="button">
+          RESET TO DEFAULT
+        </button>
+</aside>
+<!-- RESPONSIVE 3-COLUMN PRODUCT GRID -->
+<main class="lg:col-span-9 flex flex-col gap-10">
+<!-- 8 High-Detail Product Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+<!-- CARD 1 -->
+<div class="group relative flex flex-col bg-surface-container-low overflow-hidden transition-all duration-300 hover:shadow-xl">
+<!-- Image Frame with dual hover toggle -->
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 group-hover:opacity-0 absolute inset-0" data-alt="Male athlete running on track wearing black technical high performance athletic t-shirt with subtle reflective accents, dark carbon background, dramatic rim lighting, dynamic athletic movement and high speed capture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzh8aQptolgb6oWhIeICI6DkUn27kr4oOJ20FeYCHhknXYIVDLnqGoebTiqTifrUxXizsUyHZgSC5RK7lC7B0j1LsPHzBA4fWZJAHx7Xo1UAZin7KwoqLhIFUjPgumew-pD8axMDOlaGoxhLG_fmKrx_7LHAbKFU9upEdV0LP6E1oLXQEkyKJck6Q_Fh3priDhU64irH_npCR05hiHvI-w0NevTyptUGXwvGEC7aM"/>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-0 group-hover:opacity-100 absolute inset-0" data-alt="Rear angle of male runner showing ergonomic targeted mesh ventilation panels down the spinal column, black technical athletic tee, dramatic high contrast studio lighting with deep carbon shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4TutrL4NaTnUjleE4I3GyjFlR1bcmc40G0iV4_9n90x7tvotKZZnqRQTdevkxUAHIrp1A059NtJeoH3CAoXofhl7f3A-6grdGwloh6AusyRfIdUOdvLXNs4Cq-eDa7VqWpwLgkYqRC-glA3lOJDRSvApaRTLoI2Fq0HtD81ipS1uyNg_gPSfE0G5BJaz11WrtgA44XvpiUyhj_Cr_ias8PNgtyCiZ4f9lp2qE_4w"/>
+<!-- Badge -->
+<div class="absolute top-3 left-3 z-10 flex flex-col gap-1">
+<span class="bg-primary-fixed text-on-primary-fixed px-2.5 py-1 font-label-sm text-label-sm uppercase tracking-widest font-bold">
+                  BEST SELLER
+                </span>
+<span class="bg-surface-container-lowest/80 backdrop-blur-sm text-tertiary px-2 py-0.5 font-label-sm text-[10px] tracking-wider uppercase">
+                  WEIGHT: 98G
+                </span>
+</div>
+<!-- Wishlist Heart -->
+<button class="absolute top-3 right-3 z-10 p-2 bg-surface-container-lowest/60 hover:bg-surface-container-lowest text-on-surface hover:text-secondary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<!-- Quick-Add Overlay On Hover -->
+<div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex flex-col gap-2 z-20">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-center text-on-surface-variant">QUICK ADD SIZE:</span>
+<div class="grid grid-cols-4 gap-1.5">
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">S</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">M</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">L</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">XL</button>
+</div>
+</div>
+</div>
+<!-- Content Area -->
+<div class="p-4 flex flex-col flex-1 justify-between gap-3 bg-surface-container">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">AERODRY™ V-MATRIX</span>
+<div class="flex items-center gap-1 text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-primary font-bold">4.9</span>
+<span class="text-outline">(342)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-primary tracking-normal group-hover:text-primary-fixed transition-colors">
+                  AERODRY KINETIC TEE
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Ultralight race-pace tee with laser-cut ventilation
+                </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-headline-sm text-headline-sm text-primary">$64.00</span>
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-lowest ring-1 ring-primary-fixed"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-primary-fixed"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-surface-bright"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-tertiary"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 2 -->
+<div class="group relative flex flex-col bg-surface-container-low overflow-hidden transition-all duration-300 hover:shadow-xl">
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 group-hover:opacity-0 absolute inset-0" data-alt="Muscular male cross-training athlete doing kettlebell swings wearing volt green seamless performance t-shirt with dark geometric carbon patterns, raw athletic studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB49mLdIXrQqyPjf337_aRkOgneivgh64DkrFdrB-jbIF1lUoX4n2HMPH4fsC9GjniD9SFay1Io9WoSb39s9GADRXiHzpVlx4x1x9JNW7FnxKQaetJehjnQb85c2dA5toXwu4CdHKeD9TmrX354D5_Qv91hOq5zM6F_c-sqmNH7A1IysTEzvzO5WBvpgZc0PQ4NZT6C5Z65yvveByLX-o5K0ws7PSZsaBMa1dpj8A4"/>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-0 group-hover:opacity-100 absolute inset-0" data-alt="Close up fabric texture shot of volt neon compression jersey micro-fibers showing engineered sweat dispersion channels, macro industrial sportswear photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxZli2MiEX_yO4VJasUj4xUHaqMzqf_kFzP1Z8iwqk4rpfMO1hskTyx4ZCz8Q6DZwwE-P8lHu8pjZLPrnY4ki09Fup8xGsVtugmNVAeQbVLNdAkm4AdCn7cT3xlrSAmNRagA3T-JIxB_KtfKMO4-De_HV-ADzvlWIzah2FHHPFYVbPH1QZ5FzTbs6XKJ3zjma9XR1OBxvU2PfGT0BnAJY_yqllTEhVR-qnqnLdMOY"/>
+<div class="absolute top-3 left-3 z-10 flex flex-col gap-1">
+<span class="bg-primary text-on-primary px-2.5 py-1 font-label-sm text-label-sm uppercase tracking-widest font-bold">
+                  NEW ARRIVAL
+                </span>
+<span class="bg-surface-container-lowest/80 backdrop-blur-sm text-tertiary px-2 py-0.5 font-label-sm text-[10px] tracking-wider uppercase">
+                  HYBRID COMPRESSION
+                </span>
+</div>
+<button class="absolute top-3 right-3 z-10 p-2 bg-surface-container-lowest/60 hover:bg-surface-container-lowest text-on-surface hover:text-secondary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex flex-col gap-2 z-20">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-center text-on-surface-variant">QUICK ADD SIZE:</span>
+<div class="grid grid-cols-4 gap-1.5">
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">S</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">M</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">L</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">XL</button>
+</div>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-3 bg-surface-container">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">PROSEAMLESS™</span>
+<div class="flex items-center gap-1 text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-primary font-bold">4.8</span>
+<span class="text-outline">(189)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-primary tracking-normal group-hover:text-primary-fixed transition-colors">
+                  PROSEAMLESS SPEED TEE
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Zero friction flatlocked construction with 360-degree stretch
+                </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-headline-sm text-headline-sm text-primary">$68.00</span>
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-primary-fixed ring-1 ring-primary"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-secondary-container"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 3 -->
+<div class="group relative flex flex-col bg-surface-container-low overflow-hidden transition-all duration-300 hover:shadow-xl">
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 group-hover:opacity-0 absolute inset-0" data-alt="Studio shot of elite sprinter wearing slate grey technical longtail running top with reflective kinetic chevron branding on chest, dramatic sharp contrast shadows on dark grey backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN96DTbYoCszT11UNK3HgV8PMfbKlD9n-RDgGagPdkCTQOjCNaDNVOplLb_D4luUyBy5BhkzisZeLTuf7pAemrA1ZztarefEVgquYaw1rAPOsF_CGx0e1tzuEjpaT74eSzIXwFhEcax1-sBo_mU3r_zVcqzTqI-gWBo0H-h6y4yytRtxiXBVrERI_TS1tQTVGIVnOtzJJbK55bJAeF0oruw2TwwFbK6Pil7_Mpedg"/>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-0 group-hover:opacity-100 absolute inset-0" data-alt="Action running shot in city tunnel of sprinter in slate technical performance top with glowing reflective details catching urban night light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnKhRiZhEKkPsofKB7U4wvzZ7LcjpyNfx-9inCKxrvug1bAY2497qKi4GAmzG2s412Cb2dgdNVZuyOq-fbraCxryZk8sLCQj9akTbkaCTbR2B8_vqP2ULJy7csONAUPyKvay7ztyuqO6hL2LWyQ3h18l8wRIEy73j3vT-E8_2jQONEX-HWvciMa-CNrI6nSm1eHtBjnU9cfIRq3jHBjRqCkeQAGh7_AsKctVBGncU"/>
+<div class="absolute top-3 left-3 z-10 flex flex-col gap-1">
+<span class="bg-secondary-container text-on-secondary px-2.5 py-1 font-label-sm text-label-sm uppercase tracking-widest font-bold">
+                  TECH CHOICE
+                </span>
+<span class="bg-surface-container-lowest/80 backdrop-blur-sm text-tertiary px-2 py-0.5 font-label-sm text-[10px] tracking-wider uppercase">
+                  COLD BLACK FINISH
+                </span>
+</div>
+<button class="absolute top-3 right-3 z-10 p-2 bg-surface-container-lowest/60 hover:bg-surface-container-lowest text-on-surface hover:text-secondary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex flex-col gap-2 z-20">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-center text-on-surface-variant">QUICK ADD SIZE:</span>
+<div class="grid grid-cols-4 gap-1.5">
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">S</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">M</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">L</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">XL</button>
+</div>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-3 bg-surface-container">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-wider">THERMAL VENT LAB</span>
+<div class="flex items-center gap-1 text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-primary font-bold">5.0</span>
+<span class="text-outline">(94)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-primary tracking-normal group-hover:text-primary-fixed transition-colors">
+                  MATRIX THERMO-VENT TEE
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Zoned aerodynamic heat dissipation for high heat index sessions
+                </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-headline-sm text-headline-sm text-primary">$78.00</span>
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-bright ring-1 ring-primary"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-on-tertiary-container"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 4 -->
+<div class="group relative flex flex-col bg-surface-container-low overflow-hidden transition-all duration-300 hover:shadow-xl">
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 group-hover:opacity-0 absolute inset-0" data-alt="Chalk white high density athletic workout tee on male fitness athlete performing pullups, muscular physique, bright studio key lights, minimalist industrial set" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHAg-Dt-e444W_ciL45oLEKA75tEwqMcU-nCLIxi0CQlNMP02vwtJxUpyqbJtybBXBjMXgWR9dnSi5gQPRfLGjwvj4qVxFKymmbAJXxNryWm3_3t6-umKTPueDeWT7LDWklPCwiV72wBE165DHeo9wwTj76jVEqCptxX0iW2i74KEM75H7jHuALKRMuxAaj8AI8etArWrJ9IyJuHB3hbGvW5A0TV4utWS8-XfmG1Q"/>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-0 group-hover:opacity-100 absolute inset-0" data-alt="Rear angle showing deep scapular stretch and back panel ergonomic raglan sleeve construction of white technical gym t-shirt on muscular athlete" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPmv5m45W9uK9GFJqAdHAyHY-qs1ifne_wGHsUmM5J1Eo7lliH52h_1xcNZI-FV7gAr0HIucLqDHpeIlzRSqyyxn5PU7rDfx3KWRL07dM_mrVwUvh_0mbdcaKkXigz16tcy03PFiyuf3nG7BkUw63pppH2BhnaSWKO_9OtbvwDD-2oxJ-PP_oJ6DbNLs_vwatGe3NjofeDE2GtipTOt9W31wg_7tiq8iGyza4BGOQ"/>
+<div class="absolute top-3 left-3 z-10 flex flex-col gap-1">
+<span class="bg-surface-container-highest text-on-surface px-2.5 py-1 font-label-sm text-label-sm uppercase tracking-widest font-bold">
+                  HEAVYWEIGHT COMBED
+                </span>
+</div>
+<button class="absolute top-3 right-3 z-10 p-2 bg-surface-container-lowest/60 hover:bg-surface-container-lowest text-on-surface hover:text-secondary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex flex-col gap-2 z-20">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-center text-on-surface-variant">QUICK ADD SIZE:</span>
+<div class="grid grid-cols-4 gap-1.5">
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">S</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">M</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">L</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">XL</button>
+</div>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-3 bg-surface-container">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">BOX FIT TECH</span>
+<div class="flex items-center gap-1 text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-primary font-bold">4.7</span>
+<span class="text-outline">(215)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-primary tracking-normal group-hover:text-primary-fixed transition-colors">
+                  OVERSIZED APEX TEE
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  240GSM structured cotton blended with high-durability elastane
+                </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-headline-sm text-headline-sm text-primary">$58.00</span>
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-tertiary ring-1 ring-primary"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-outline-variant"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 5 -->
+<div class="group relative flex flex-col bg-surface-container-low overflow-hidden transition-all duration-300 hover:shadow-xl">
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 group-hover:opacity-0 absolute inset-0" data-alt="Tactical olive green technical athletic top on sprinter resting against track boundary, dynamic stadium lights at twilight, sharp realistic fabric grain and sweat droplets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjS1V4TRpkucchaC7En9Hn8p2UlP-Im4CymINwYNvO76MIOVbXOZ_8OCnQXFSe7VF9JlEEjdVJ_n1kYalQSQnkPw8pMLqQ-Q_qM78tBrez5Tb9JiWescql9KyLce4tesvqMUODpNCHxZelz-QrB8mK_rqwmx8mevR_UPTrulZbOtjtBcESCpPBZhMUlla9zFzbm7d7EaS_sfHOyLbOCg0ululo67knErzq-DvflWc"/>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-0 group-hover:opacity-100 absolute inset-0" data-alt="Action portrait of runner tying shoes showcasing flexible bonded crewneck collar on olive athletic performance tee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqxkFcKAVvJaDxBwVi5wYxJXUDaya6l99CwN_-FD95INVm5xThw_MNUGcTsnu1KelH4y3fxaiLq7sDj0q1QVz9wZIFox8xQtIzZalGcFGxI8cx92XIbn1uhIoR0TeLKoJuwmoR7i8gzT6Zx8mJSzECzvYjRQMEuqzrwK5yxfCyFJnFNjfE87--JoyzWyVZDHZX7USFgy77JTRSK13UmEDLIqHG0pml7YOVSLarEgs"/>
+<div class="absolute top-3 left-3 z-10 flex flex-col gap-1">
+<span class="bg-primary-fixed text-on-primary-fixed px-2.5 py-1 font-label-sm text-label-sm uppercase tracking-widest font-bold">
+                  BEST SELLER
+                </span>
+</div>
+<button class="absolute top-3 right-3 z-10 p-2 bg-surface-container-lowest/60 hover:bg-surface-container-lowest text-on-surface hover:text-secondary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex flex-col gap-2 z-20">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-center text-on-surface-variant">QUICK ADD SIZE:</span>
+<div class="grid grid-cols-4 gap-1.5">
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">S</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">M</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">L</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">XL</button>
+</div>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-3 bg-surface-container">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">DISTANCE DIVISION</span>
+<div class="flex items-center gap-1 text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-primary font-bold">4.9</span>
+<span class="text-outline">(418)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-primary tracking-normal group-hover:text-primary-fixed transition-colors">
+                  INTERVAL MARATHON TOP
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Antibacterial silver weave with bonded hem to eliminate chafe
+                </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-headline-sm text-headline-sm text-primary">$72.00</span>
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-outline-variant ring-1 ring-primary"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-surface-bright"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-on-tertiary-container"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 6 -->
+<div class="group relative flex flex-col bg-surface-container-low overflow-hidden transition-all duration-300 hover:shadow-xl">
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 group-hover:opacity-0 absolute inset-0" data-alt="Deep navy compression athletic short sleeve shirt on male athlete performing box jumps in dimly lit carbon training gym with orange ambient highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUXgLUSq03nJLQ5nXgaKEiTWi9Uwh5WC-HpPVvKCO2utZv8ByC3JAEd5mynXV89It8MttrbmE1XW2N5VeMvDG8z248J6x642Ph6q99rqnWDqeZERClpYF0mLf2vv40EDeMfJ8gZTcZfOKy6oJK2FwMoVe-DH_KiNL7Ve7Y5vJ4fpNcvb2onvcHFWWtycfBS0e2TlueYC58_fns9xREyE2F2cMcWZdQLjoZxf5brrY"/>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-0 group-hover:opacity-100 absolute inset-0" data-alt="Over the shoulder angle of navy training performance tee showing back vent matrix and kinetic branding logo, sharp dark fitness studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1CikAOXSLrmyM8NhczoSWYUoY7IUlED74c7Ds_GLlIljfQg_Gh1BN9gzt5aMoyNYCvaRtzYjXrs-qO_Vb-c48x1ri1-ksFFepMqPU3clSdaubRZHR8d__6HwvnAvIJACfqFJK-9hnhid3G8dW3yhWPtaIczKV75cg3-UIkPzqNRNWfJPeY-P0Kth6EtkNQXu8Oun0Lq34H7ckmsp46pHUlH_F2wMm92v68LMVPHs"/>
+<div class="absolute top-3 left-3 z-10 flex flex-col gap-1">
+<span class="bg-primary text-on-primary px-2.5 py-1 font-label-sm text-label-sm uppercase tracking-widest font-bold">
+                  NEW ARRIVAL
+                </span>
+</div>
+<button class="absolute top-3 right-3 z-10 p-2 bg-surface-container-lowest/60 hover:bg-surface-container-lowest text-on-surface hover:text-secondary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex flex-col gap-2 z-20">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-center text-on-surface-variant">QUICK ADD SIZE:</span>
+<div class="grid grid-cols-4 gap-1.5">
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">S</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">M</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">L</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">XL</button>
+</div>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-3 bg-surface-container">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">MUSCLE ARCHITECTURE</span>
+<div class="flex items-center gap-1 text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-primary font-bold">4.9</span>
+<span class="text-outline">(128)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-primary tracking-normal group-hover:text-primary-fixed transition-colors">
+                  HYROX CONDITIONING TEE
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  High-abrasion resistance shoulder weave for sandbag &amp; sled drills
+                </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-headline-sm text-headline-sm text-primary">$66.00</span>
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-on-tertiary-container ring-1 ring-primary"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-surface-bright"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 7 -->
+<div class="group relative flex flex-col bg-surface-container-low overflow-hidden transition-all duration-300 hover:shadow-xl">
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 group-hover:opacity-0 absolute inset-0" data-alt="Crimson red athletic training shirt on elite runner in explosive start stance on indoor track, intense focus, crisp high shutter speed capture, high dynamic range shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzDYsnxUDP-3CRcoYNGbfSQEZ33zW5tTHbsuu2cHQovui0neTqi2AsVDqqdQf6-XgMnVk6nJ5JhzrpLq9O1YnwUmH2vjJIz5hXCiOpYkdHNa2Xc0K1OBfLUK6Hg0oLiI9vI85uOY9pjK_zir8uIt79r6QXYpnQQSShkrasoXdypeQPx-gwuD9W5vYrG8KpRfItzLtrTQC5JK9oATajRYO4g2CX6bXh8Yw6ujJpx_Y"/>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-0 group-hover:opacity-100 absolute inset-0" data-alt="Detailed close up of crimson performance tee showing bonded seamless armpit gussets and moisture-wicking capillary channels under studio lamps" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-ydaRb8yk3U3VrqnLw7KiBbutk5qgBE_W3CqmMKpP0Yt2KFWrdAG-kEbZqZKNgbEMIGreO__flnhWUrXxrl9_QW2g2sMBr57pGRE6aGs2UMt3ue52JZrs9wwFPa7eqQMorcrmK3NTX1NJcbKPvOYiFlrF0YeCorON7g2JXWBh9gSAlS-xR3vHCOG1A90iIDfprJfp9xRbYWU7pnuhdWFAyKEUykDdzseFlywNgKM"/>
+<div class="absolute top-3 left-3 z-10 flex flex-col gap-1">
+<span class="bg-secondary-container text-on-secondary px-2.5 py-1 font-label-sm text-label-sm uppercase tracking-widest font-bold">
+                  TECH CHOICE
+                </span>
+</div>
+<button class="absolute top-3 right-3 z-10 p-2 bg-surface-container-lowest/60 hover:bg-surface-container-lowest text-on-surface hover:text-secondary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex flex-col gap-2 z-20">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-center text-on-surface-variant">QUICK ADD SIZE:</span>
+<div class="grid grid-cols-4 gap-1.5">
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">S</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">M</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">L</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">XL</button>
+</div>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-3 bg-surface-container">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-wider">AERODRY™ PRO</span>
+<div class="flex items-center gap-1 text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-primary font-bold">4.8</span>
+<span class="text-outline">(164)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-primary tracking-normal group-hover:text-primary-fixed transition-colors">
+                  PULSE IGNITION RACER
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Hydrophobic fast-drying filaments engineered for sub-2 hour half splits
+                </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-headline-sm text-headline-sm text-primary">$70.00</span>
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-secondary-container ring-1 ring-primary"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-tertiary"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 8 -->
+<div class="group relative flex flex-col bg-surface-container-low overflow-hidden transition-all duration-300 hover:shadow-xl">
+<div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 group-hover:opacity-0 absolute inset-0" data-alt="Monochrome stealth carbon black running short sleeve technical compression top on athlete against stark dark backdrop, high definition textural athletic editorial photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwi51sFC5STBxf9g_WJ3jXXni6dZ5_RDXWGVyDsqsId4MzX8tYhSRX1ZnYAOs1aP0k8OssxIqwNd-Zs1Pn5G9sMLHAFpRex8F8r3S5xDuKogA6LXFGQfkNDCOLucRd3B-BKHTpDXzLSd1rG-fP5tL5Sj5ctFT1x9ykbQpgVZARbRTBlA5OSH0ZhcTxsfRDc_rDAjHwiNe-T8eJATSTgI6G5sI_5S5w5zPiLMrcpbE"/>
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-0 group-hover:opacity-100 absolute inset-0" data-alt="Close up athletic back silhouette showing ergonomic kinetic spine taping and heat release perforated dot matrix in matte black fabric" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkR-p4PBf2jO2BgMOIgq_y3gEOmRTsBRbb_l9M3ivUmf7YDbib1Kjbd23nS32GKsbUeETiZXif2csEXmkkEfvK-rsAiemHlYTKIkqouVCthq4swyDbqGyW-VglQhveKVeW452PnPJTbaypJmfyE_tOgnEwpTeay0PIUhERR0uR5f-5B8_FuGuVP2Yv2CDjpu63l9567kWEzChkEYpbppdtgKyTwUI6rc_y_2xBWjY"/>
+<div class="absolute top-3 left-3 z-10 flex flex-col gap-1">
+<span class="bg-primary-fixed text-on-primary-fixed px-2.5 py-1 font-label-sm text-label-sm uppercase tracking-widest font-bold">
+                  BEST SELLER
+                </span>
+<span class="bg-surface-container-lowest/80 backdrop-blur-sm text-tertiary px-2 py-0.5 font-label-sm text-[10px] tracking-wider uppercase">
+                  CARBON FIBER INFUSED
+                </span>
+</div>
+<button class="absolute top-3 right-3 z-10 p-2 bg-surface-container-lowest/60 hover:bg-surface-container-lowest text-on-surface hover:text-secondary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex flex-col gap-2 z-20">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-center text-on-surface-variant">QUICK ADD SIZE:</span>
+<div class="grid grid-cols-4 gap-1.5">
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">S</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">M</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">L</button>
+<button class="py-1.5 bg-surface-container text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm text-center transition-colors" onclick="document.getElementById('kinetic-cart-drawer').classList.remove('translate-x-full')" type="button">XL</button>
+</div>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-3 bg-surface-container">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">LAB ELITE PROTO</span>
+<div class="flex items-center gap-1 text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-primary font-bold">5.0</span>
+<span class="text-outline">(89)</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-primary tracking-normal group-hover:text-primary-fixed transition-colors">
+                  STEALTH CARBON PROTO TEE
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Graphene-treated thermal conductor threads with anti-odor matrix
+                </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-headline-sm text-headline-sm text-primary">$76.00</span>
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-lowest ring-1 ring-primary-fixed"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-surface-bright"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-outline-variant"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- PAGINATION & PROGRESS INDICATOR -->
+<div class="w-full flex flex-col items-center justify-center gap-4 pt-8 pb-12">
+<!-- Text Readout -->
+<div class="flex items-center gap-2 font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">
+<span>SHOWING</span>
+<span class="text-primary font-bold">8</span>
+<span>OF</span>
+<span class="text-primary font-bold">24</span>
+<span>PRODUCTS</span>
+</div>
+<!-- Progress Bar Container -->
+<div class="w-full max-w-md h-1.5 bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-fixed w-[33.333%] transition-all duration-300"></div>
+</div>
+<!-- Heavy Condensed Black Load More CTA -->
+<button class="group mt-2 px-12 py-4 bg-primary text-on-primary hover:bg-primary-fixed hover:text-on-primary-fixed flex items-center gap-3 transition-colors shadow-lg" type="button">
+<span class="font-headline-sm text-headline-sm uppercase tracking-normal">LOAD MORE GEAR</span>
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-y-1">expand_more</span>
+</button>
+<!-- Secondary Telemetry Microcopy -->
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">
+            ALL PERFORMANCE TOPS BACKED BY 30-DAY VELOCITY TRIAL
+          </span>
+</div>
+</main>
+</div>
+</section>
+<!-- TECHNICAL INNOVATION FEATURE BLOCK (Break monotony & establish athletic authority) -->
+<section class="w-full bg-surface-container-lowest px-margin-mobile lg:px-margin py-16">
+<div class="max-w-[1720px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container p-6 flex flex-col justify-between gap-6 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-primary-fixed text-[36px]">air</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SYS_METRIC.01</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary mb-2">AERODRY™ EVAPORATION</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Engineered capillary yarn matrices accelerate moisture extraction by 4.2x compared to standard technical polyester, drying mid-stride under sustained load.
+          </p>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<span class="h-1.5 w-12 bg-primary-fixed"></span>
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase">SUB-10 MIN DRY RATING</span>
+</div>
+</div>
+<div class="bg-surface-container p-6 flex flex-col justify-between gap-6 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-primary-fixed text-[36px]">sync_alt</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SYS_METRIC.02</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary mb-2">PROSEAMLESS™ ERGONOMICS</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Circular knitting machines construct garments with localized compression variations and zero friction seams across high-friction scapular pivot nodes.
+          </p>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<span class="h-1.5 w-12 bg-primary-fixed"></span>
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase">ZERO CHAFE GUARANTEED</span>
+</div>
+</div>
+<div class="bg-surface-container p-6 flex flex-col justify-between gap-6 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-primary-fixed text-[36px]">shield</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SYS_METRIC.03</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-primary mb-2">THERMOREGULATION MATRIX</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Infused graphene fibers actively distribute core upper body heat outward across high-surface venting channels, preserving critical endurance energy.
+          </p>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<span class="h-1.5 w-12 bg-primary-fixed"></span>
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase">-1.8°C CORE HEAT OFFSET</span>
+</div>
+</div>
+</div>
+</section>
+<!-- INLINE JAVASCRIPT FOR FILTER DRAWER & INTERACTIVITY -->
+<script>
+    (function() {
+      const toggleBtn = document.getElementById('toggle-filter-btn');
+      const closeBtn = document.getElementById('close-mobile-filters');
+      const sidebar = document.getElementById('filter-sidebar');
+
+      if (toggleBtn && sidebar) {
+        toggleBtn.addEventListener('click', function() {
+          sidebar.classList.toggle('hidden');
+          if (!sidebar.classList.contains('hidden')) {
+            sidebar.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      }
+
+      if (closeBtn && sidebar) {
+        closeBtn.addEventListener('click', function() {
+          sidebar.classList.add('hidden');
+        });
+      }
+
+      // Responsive reset
+      function checkWidth() {
+        if (window.innerWidth >= 1024) {
+          sidebar.classList.remove('hidden');
+        }
+      }
+      window.addEventListener('resize', checkWidth);
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest text-on-surface"><div class="bg-surface-container py-space-xl px-margin-mobile lg:px-margin"><div class="max-w-4xl mx-auto text-center space-y-space-md"><span class="text-primary-fixed font-label-sm text-label-sm uppercase tracking-widest">VELOCITY GEAR ARCHITECTURE</span><h3 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase text-primary tracking-tight">JOIN THE KINETIC COMMUNITY</h3><p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">UNLOCK 10% OFF YOUR FIRST ORDER, EXCLUSIVE DROP ACCESS, AND ELITE PERFORMANCE INTELLIGENCE.</p><div class="flex flex-col sm:flex-row max-w-md mx-auto gap-space-xs mt-space-md"><input class="flex-1 bg-surface-container-low px-space-md py-3 text-label-sm font-label-sm text-on-surface placeholder:text-on-tertiary-container focus:outline-none" placeholder="ENTER YOUR EMAIL" type="email"/><button class="bg-primary text-on-primary hover:bg-primary-fixed hover:text-on-primary-fixed px-space-lg py-3 font-label-lg text-label-lg uppercase tracking-wider transition-colors" type="button">SUBSCRIBE</button></div></div></div><div class="py-space-xl px-margin-mobile lg:px-margin"><div class="grid grid-cols-2 md:grid-cols-4 gap-space-lg mb-space-xl"><div><h5 class="font-label-lg text-label-lg uppercase text-primary tracking-wider mb-space-md">SHOP CATEGORIES</h5><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="men" href="#">Men's High-Velocity Apparel</a></li><li><a class="hover:text-primary transition-colors" data-path="women" href="#">Women's Kinetic Systems</a></li><li><a class="hover:text-primary transition-colors" data-path="new-arrivals" href="#">Footwear &amp; Carbon Spikes</a></li><li><a class="hover:text-primary transition-colors" data-path="collections" href="#">Aerodynamic Layers</a></li><li><a class="hover:text-primary transition-colors" data-path="sale" href="#">Performance Outlet</a></li></ul></div><div><h5 class="font-label-lg text-label-lg uppercase text-primary tracking-wider mb-space-md">INNOVATION LAB</h5><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="innovation" href="#">AeroDry™ Moisture Matrix</a></li><li><a class="hover:text-primary transition-colors" data-path="innovation" href="#">ProWeave™ Seamless Carbon</a></li><li><a class="hover:text-primary transition-colors" data-path="innovation" href="#">Thermoregulation Research</a></li><li><a class="hover:text-primary transition-colors" data-path="innovation" href="#">Sustainable Polymer Science</a></li></ul></div><div><h5 class="font-label-lg text-label-lg uppercase text-primary tracking-wider mb-space-md">CUSTOMER CARE</h5><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="orders" href="#">Track Active Orders</a></li><li><a class="hover:text-primary transition-colors" data-path="shipping-returns" href="#">Worldwide Shipping Protocols</a></li><li><a class="hover:text-primary transition-colors" data-path="shipping-returns" href="#">30-Day Guarantee Returns</a></li><li><a class="hover:text-primary transition-colors" data-path="size-guide" href="#">Precision Size Metric Guide</a></li><li><a class="hover:text-primary transition-colors" data-path="contact" href="#">Contact Athletes Support</a></li></ul></div><div><h5 class="font-label-lg text-label-lg uppercase text-primary tracking-wider mb-space-md">ABOUT KINETIC</h5><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="about" href="#">Our Manifesto</a></li><li><a class="hover:text-primary transition-colors" data-path="about" href="#">Elite Athlete Roster</a></li><li><a class="hover:text-primary transition-colors" data-path="about" href="#">Material Transparency</a></li><li><a class="hover:text-primary transition-colors" data-path="about" href="#">Global Flagships</a></li></ul></div></div><div class="flex flex-col md:flex-row items-center justify-between gap-space-md pt-space-lg"><div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><span class="px-2 py-1 bg-surface-container text-on-surface font-bold">VISA</span><span class="px-2 py-1 bg-surface-container text-on-surface font-bold">MASTERCARD</span><span class="px-2 py-1 bg-surface-container text-on-surface font-bold">AMEX</span><span class="px-2 py-1 bg-surface-container text-on-surface font-bold">APPLE PAY</span><span class="px-2 py-1 bg-surface-container text-on-surface font-bold">PAYPAL</span></div><div class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-right"><p>© 2025 KINETIC PERFORMANCE GEAR LABS INC. ALL RIGHTS RESERVED.</p></div></div></div></footer></body></html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Stitch Apex – KINETIC Athletic Wear Storefront</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#131313",
+            "surface-container": "#201f1f",
+            "surface-container-low": "#1c1b1b",
+            "surface-container-lowest": "#0e0e0e",
+            "surface-container-high": "#2a2a2a",
+            "on-surface": "#e5e2e1",
+            "on-surface-variant": "#c5c9ac",
+            "primary": "#ffffff",
+            "primary-fixed": "#caf300",
+            "on-primary-fixed": "#171e00",
+            "secondary-container": "#ff571a",
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface min-h-screen flex flex-col items-center justify-center p-8 text-on-surface font-['Inter']">
+  <div class="max-w-3xl w-full">
+    <div class="flex items-center gap-3 mb-2">
+      <span class="material-symbols-outlined text-primary-fixed text-4xl">bolt</span>
+      <h1 class="font-['Anton'] text-5xl md:text-7xl uppercase tracking-tight text-primary">KINETIC</h1>
+    </div>
+    <p class="text-on-surface-variant text-lg mb-10">Stitch Apex Athletic Wear Storefront — Select a page to preview:</p>
+
+    <div class="grid gap-4">
+      <!-- Homepage -->
+      <a href="/homepage_move_without_limits/code.html"
+         class="group flex items-center gap-5 bg-surface-container hover:bg-surface-container-high p-5 transition-all">
+        <span class="material-symbols-outlined text-primary-fixed text-3xl">home</span>
+        <div class="flex-1">
+          <h2 class="font-['Anton'] text-2xl uppercase text-primary group-hover:text-primary-fixed transition-colors">Homepage</h2>
+          <p class="text-on-surface-variant text-sm">Move Without Limits – Full hero, categories, featured products & newsletter</p>
+        </div>
+        <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary-fixed transition-colors">arrow_forward</span>
+      </a>
+
+      <!-- PLP -->
+      <a href="/men_s_performance_t_shirts_plp/code.html"
+         class="group flex items-center gap-5 bg-surface-container hover:bg-surface-container-high p-5 transition-all">
+        <span class="material-symbols-outlined text-primary-fixed text-3xl">grid_view</span>
+        <div class="flex-1">
+          <h2 class="font-['Anton'] text-2xl uppercase text-primary group-hover:text-primary-fixed transition-colors">Product Listing</h2>
+          <p class="text-on-surface-variant text-sm">Men's Performance T-Shirts – Filters, grid, sort & 24 product cards</p>
+        </div>
+        <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary-fixed transition-colors">arrow_forward</span>
+      </a>
+
+      <!-- PDP -->
+      <a href="/aerodry_velocity_performance_tee_pdp/code.html"
+         class="group flex items-center gap-5 bg-surface-container hover:bg-surface-container-high p-5 transition-all">
+        <span class="material-symbols-outlined text-primary-fixed text-3xl">apparel</span>
+        <div class="flex-1">
+          <h2 class="font-['Anton'] text-2xl uppercase text-primary group-hover:text-primary-fixed transition-colors">Product Detail</h2>
+          <p class="text-on-surface-variant text-sm">AeroDry™ Velocity Performance Tee – Gallery, specs, size picker & reviews</p>
+        </div>
+        <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary-fixed transition-colors">arrow_forward</span>
+      </a>
+
+      <!-- Cart / Checkout -->
+      <a href="/cart_streamlined_checkout/code.html"
+         class="group flex items-center gap-5 bg-surface-container hover:bg-surface-container-high p-5 transition-all">
+        <span class="material-symbols-outlined text-primary-fixed text-3xl">shopping_cart_checkout</span>
+        <div class="flex-1">
+          <h2 class="font-['Anton'] text-2xl uppercase text-primary group-hover:text-primary-fixed transition-colors">Cart & Checkout</h2>
+          <p class="text-on-surface-variant text-sm">Streamlined checkout – Contact, shipping, payment & order summary</p>
+        </div>
+        <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary-fixed transition-colors">arrow_forward</span>
+      </a>
+    </div>
+
+    <p class="text-center text-on-surface-variant text-xs mt-10 uppercase tracking-widest">Served locally on port 8000</p>
+  </div>
+</body>
+</html>

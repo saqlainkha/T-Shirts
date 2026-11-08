@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed": "#3a0b00", "surface-tint": "#b0d500", "outline": "#8f9378", "on-surface": "#e5e2e1", "on-secondary-fixed-variant": "#852400", "secondary-fixed-dim": "#ffb59e", "on-primary": "#2a3400", "tertiary": "#ffffff", "secondary-fixed": "#ffdbd0", "on-primary-fixed": "#171e00", "surface-container": "#201f1f", "surface-bright": "#3a3939", "surface-container-low": "#1c1b1b", "primary-container": "#caf300", "error": "#ffb4ab", "on-tertiary": "#2f3132", "outline-variant": "#444932", "on-tertiary-container": "#636466", "on-background": "#e5e2e1", "secondary": "#ffb59e", "on-error-container": "#ffdad6", "background": "#131313", "inverse-surface": "#e5e2e1", "on-tertiary-fixed-variant": "#454748", "on-primary-container": "#596c00", "secondary-container": "#ff571a", "on-secondary": "#5e1700", "on-secondary-container": "#521300", "surface-container-highest": "#353534", "tertiary-container": "#e2e2e3", "inverse-on-surface": "#313030", "on-tertiary-fixed": "#1a1c1d", "primary": "#ffffff", "on-error": "#690005", "surface-variant": "#353534", "primary-fixed-dim": "#b0d500", "on-primary-fixed-variant": "#3e4c00", "surface-dim": "#131313", "tertiary-fixed": "#e2e2e3", "surface": "#131313", "surface-container-high": "#2a2a2a", "inverse-primary": "#536600", "on-surface-variant": "#c5c9ac", "tertiary-fixed-dim": "#c6c6c7", "primary-fixed": "#caf300", "error-container": "#93000a", "surface-container-lowest": "#0e0e0e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "4rem", "gutter-mobile": "0.75rem", "space-md": "1rem", "space-sm": "0.5rem", "margin-mobile": "1.25rem", "gutter": "1.5rem", "space-xs": "0.25rem", "margin": "3rem", "space-lg": "2rem" }, "fontFamily": { "headline-md-mobile": [ "Anton" ], "headline-lg-mobile": [ "Anton" ], "headline-sm": [ "Anton" ], "display-xl": [ "Anton" ], "headline-lg": [ "Anton" ], "body-md": [ "Inter" ], "label-lg": [ "Inter" ], "label-md": [ "Inter" ], "headline-md": [ "Anton" ], "body-sm": [ "Inter" ], "display-xl-mobile": [ "Anton" ], "body-lg": [ "Inter" ], "label-sm": [ "Inter" ] }, "fontSize": { "headline-md-mobile": [ "28px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-lg-mobile": [ "36px", { "lineHeight": "40px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-sm": [ "24px", { "lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "400" } ], "display-xl": [ "96px", { "lineHeight": "96px", "letterSpacing": "-0.02em", "fontWeight": "400" } ], "headline-lg": [ "64px", { "lineHeight": "64px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" } ], "headline-md": [ "40px", { "lineHeight": "44px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "display-xl-mobile": [ "56px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "label-sm": [ "10px", { "lineHeight": "12px", "letterSpacing": "0.1em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col justify-center items-center"><main class="w-full"><div class="flex flex-col w-full">
+<div class="w-full bg-surface-container-lowest text-on-surface py-2.5 px-6 flex justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2 h-2 rounded-full bg-primary-fixed animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-surface-tint">Telemetry Online</span>
+<span class="text-outline text-body-sm font-body-sm">/</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Encrypted Session: KNT-8924-X</span>
+</div>
+<div class="flex items-center gap-6">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase hidden md:inline-block">Carbon Neutral Logistics Guarantee</span>
+<button class="bg-surface-container-high hover:bg-surface-bright text-primary px-3 py-1 text-label-sm font-label-sm uppercase flex items-center gap-1.5 transition-colors" id="toggleDrawerBtn" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">shopping_bag</span>
+<span>View Cart Drawer (2 Items)</span>
+</button>
+</div>
+</div>
+<div class="w-full bg-surface-container-low px-6 lg:px-12 py-5 flex flex-wrap justify-between items-center gap-4">
+<div class="flex items-baseline gap-3">
+<span class="font-headline-md text-headline-md tracking-tighter text-tertiary">KINETIC</span>
+<span class="font-label-sm text-label-sm uppercase px-2 py-0.5 bg-surface-container-highest text-surface-tint">Lab Verified Gear</span>
+</div>
+<div class="flex items-center gap-3 bg-surface-container px-3.5 py-1.5 rounded">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">lock</span>
+<span class="font-label-md text-label-md text-on-surface tracking-wide uppercase">Kinetic Secure Checkout</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">256-Bit SSL</span>
+</div>
+</div>
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+<div class="lg:col-span-7 flex flex-col gap-8">
+<div class="bg-surface-container-low p-6 flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md uppercase text-on-surface-variant">Express Accelerators</span>
+<span class="font-label-sm text-label-sm text-surface-tint uppercase">Instant Authorization</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+<button class="h-11 bg-[#000000] hover:bg-surface-bright text-tertiary font-label-md text-label-md rounded flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="font-bold tracking-tight">Pay</span>
+</button>
+<button class="h-11 bg-surface-container hover:bg-surface-container-high text-tertiary font-label-md text-label-md rounded flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="text-tertiary font-bold tracking-wider">GPay</span>
+</button>
+<button class="h-11 bg-[#5a31f4] hover:opacity-90 text-tertiary font-label-md text-label-md rounded flex items-center justify-center transition-opacity" type="button">
+<span class="font-bold italic">shop</span><span class="font-bold">Pay</span>
+</button>
+<button class="h-11 bg-[#003087] hover:opacity-90 text-tertiary font-label-md text-label-md rounded flex items-center justify-center transition-opacity" type="button">
+<span class="font-bold italic text-sky-400">Pay</span><span class="font-bold italic text-sky-200">Pal</span>
+</button>
+</div>
+<div class="flex items-center gap-4 my-1">
+<div class="h-px bg-surface-container-highest flex-1"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Or standard technical checkout</span>
+<div class="h-px bg-surface-container-highest flex-1"></div>
+</div>
+</div>
+<form class="flex flex-col gap-8" id="checkoutForm" onsubmit="event.preventDefault();">
+<div class="bg-surface-container-low p-6 sm:p-8 flex flex-col gap-6">
+<div class="flex justify-between items-center pb-2">
+<div class="flex items-center gap-3">
+<span class="font-label-md text-label-md bg-surface-container-highest text-primary-fixed w-6 h-6 flex items-center justify-center rounded-full">1</span>
+<h2 class="font-headline-sm text-headline-sm uppercase text-tertiary tracking-wide">Contact Details</h2>
+</div>
+<a class="font-label-sm text-label-sm uppercase text-surface-tint hover:underline flex items-center gap-1" href="#">
+<span>Member Log In</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5 md:col-span-2">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant" for="contact-email">Email Address (Order Confirmation &amp; Telemetry)</label>
+<input class="bg-surface-container-highest text-on-surface px-4 py-3 text-body-md font-body-md rounded focus:outline-none focus:bg-surface-container focus:text-tertiary" id="contact-email" placeholder="name@domain.com" required="" type="email" value="alex.vance@kinetic-lab.io"/>
+</div>
+<div class="flex flex-col gap-1.5 md:col-span-2">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant" for="contact-phone">Mobile Phone (Live Dispatch &amp; SMS Route Updates)</label>
+<div class="relative">
+<input class="w-full bg-surface-container-highest text-on-surface pl-10 pr-4 py-3 text-body-md font-body-md rounded focus:outline-none focus:bg-surface-container focus:text-tertiary" id="contact-phone" placeholder="+1 (000) 000-0000" type="tel" value="+1 (555) 392-8011"/>
+<span class="material-symbols-outlined absolute left-3 top-3.5 text-on-surface-variant text-[18px]">sms</span>
+</div>
+</div>
+<div class="md:col-span-2 flex items-start gap-2.5 pt-1">
+<input checked="" class="mt-1 rounded bg-surface-container-highest border-none text-primary-fixed focus:ring-0" id="sms-consent" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface-variant" for="sms-consent">Send me direct SMS alerts regarding shipping clearance, out-for-delivery milestones, and prototype drops.</label>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 sm:p-8 flex flex-col gap-6">
+<div class="flex justify-between items-center pb-2">
+<div class="flex items-center gap-3">
+<span class="font-label-md text-label-md bg-surface-container-highest text-primary-fixed w-6 h-6 flex items-center justify-center rounded-full">2</span>
+<h2 class="font-headline-sm text-headline-sm uppercase text-tertiary tracking-wide">Shipping Address</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Global Dispatch</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant" for="first-name">First Name</label>
+<input class="bg-surface-container-highest text-on-surface px-4 py-3 text-body-md font-body-md rounded focus:outline-none focus:bg-surface-container focus:text-tertiary" id="first-name" required="" type="text" value="Alex"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant" for="last-name">Last Name</label>
+<input class="bg-surface-container-highest text-on-surface px-4 py-3 text-body-md font-body-md rounded focus:outline-none focus:bg-surface-container focus:text-tertiary" id="last-name" required="" type="text" value="Vance"/>
+</div>
+<div class="sm:col-span-2 flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant" for="street-address">Street Address</label>
+<div class="relative">
+<input class="w-full bg-surface-container-highest text-on-surface pl-10 pr-4 py-3 text-body-md font-body-md rounded focus:outline-none focus:bg-surface-container focus:text-tertiary" id="street-address" placeholder="Address line 1" required="" type="text" value="4820 Performance Parkway, Suite 400"/>
+<span class="material-symbols-outlined absolute left-3 top-3.5 text-on-surface-variant text-[18px]">location_on</span>
+</div>
+</div>
+<div class="sm:col-span-2 flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant" for="apt-suite">Apartment, Suite, Unit (Optional)</label>
+<input class="bg-surface-container-highest text-on-surface px-4 py-3 text-body-md font-body-md rounded focus:outline-none focus:bg-surface-container focus:text-tertiary" id="apt-suite" type="text" value="Building C - Floor 2"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant" for="city">City</label>
+<input class="bg-surface-container-highest text-on-surface px-4 py-3 text-body-md font-body-md rounded focus:outline-none focus:bg-surface-container focus:text-tertiary" id="city" required="" type="text" value="Boulder"/>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant" for="state">State</label>
+<input class="bg-surface-container-highest text-on-surface px-3 py-3 text-body-md font-body-md rounded focus:outline-none focus:bg-surface-container focus:text-tertiary uppercase text-center" id="state" required="" type="text" value="CO"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant" for="zip">ZIP Code</label>
+<input class="bg-surface-container-highest text-on-surface px-3 py-3 text-body-md font-body-md rounded focus:outline-none focus:bg-surface-container focus:text-tertiary" id="zip" required="" type="text" value="80301"/>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 sm:p-8 flex flex-col gap-6">
+<div class="flex justify-between items-center pb-2">
+<div class="flex items-center gap-3">
+<span class="font-label-md text-label-md bg-surface-container-highest text-primary-fixed w-6 h-6 flex items-center justify-center rounded-full">3</span>
+<h2 class="font-headline-sm text-headline-sm uppercase text-tertiary tracking-wide">Shipping Method</h2>
+</div>
+<span class="font-label-sm text-label-sm text-surface-tint uppercase">Hub Origin: Denver West</span>
+</div>
+<div class="space-y-3">
+<label class="flex items-center justify-between p-4 bg-surface-container rounded cursor-pointer transition-colors hover:bg-surface-container-high">
+<div class="flex items-center gap-3">
+<input checked="" class="w-4 h-4 text-primary-fixed bg-surface-container-highest border-none focus:ring-0" name="shippingMethod" type="radio" value="free"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md uppercase text-tertiary flex items-center gap-2">
+                      Express Tracked Logistics
+                      <span class="text-primary-fixed bg-on-primary text-[10px] px-2 py-0.5 rounded font-label-sm uppercase tracking-wider">Qualifies For Free</span>
+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2-3 Business Days • Full telemetry updates via SMS</span>
+</div>
+</div>
+<span class="font-label-md text-label-md uppercase text-primary-fixed">FREE</span>
+</label>
+<label class="flex items-center justify-between p-4 bg-surface-container-low rounded cursor-pointer transition-colors hover:bg-surface-container">
+<div class="flex items-center gap-3">
+<input class="w-4 h-4 text-primary-fixed bg-surface-container-highest border-none focus:ring-0" name="shippingMethod" type="radio" value="overnight"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md uppercase text-on-surface">Priority Overnight Flight Dispatch</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Delivers Tomorrow by 10:30 AM • Direct tarmac handling</span>
+</div>
+</div>
+<span class="font-label-md text-label-md uppercase text-tertiary">$15.00</span>
+</label>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 sm:p-8 flex flex-col gap-6">
+<div class="flex justify-between items-center pb-2">
+<div class="flex items-center gap-3">
+<span class="font-label-md text-label-md bg-surface-container-highest text-primary-fixed w-6 h-6 flex items-center justify-center rounded-full">4</span>
+<h2 class="font-headline-sm text-headline-sm uppercase text-tertiary tracking-wide">Payment Protocols</h2>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-surface-tint">verified_user</span>
+<span class="font-label-sm text-label-sm uppercase">PCI Level 1 Safe</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3 mb-2">
+<button class="py-3 px-4 bg-surface-container text-tertiary font-label-md text-label-md uppercase rounded flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">credit_card</span>
+<span>Credit / Debit Card</span>
+</button>
+<button class="py-3 px-4 bg-surface-container-highest text-on-surface-variant hover:text-tertiary font-label-md text-label-md uppercase rounded flex items-center justify-center gap-2 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">splitscreen</span>
+<span>Klarna / Afterpay (4x $33.05)</span>
+</button>
+</div>
+<div class="space-y-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant" for="card-number">Card Number</label>
+<div class="relative">
+<input class="w-full bg-surface-container-highest text-on-surface pl-10 pr-16 py-3 text-body-md font-body-md rounded focus:outline-none focus:bg-surface-container focus:text-tertiary tracking-widest" id="card-number" required="" type="text" value="•••• •••• •••• 4912"/>
+<span class="material-symbols-outlined absolute left-3 top-3.5 text-on-surface-variant text-[18px]">payment</span>
+<div class="absolute right-3 top-3 flex items-center gap-1 text-[11px] font-bold text-on-surface-variant">
+<span class="px-1 py-0.5 bg-surface-container rounded">VISA</span>
+<span class="px-1 py-0.5 bg-surface-container rounded">MC</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant" for="card-exp">Expiration (MM/YY)</label>
+<input class="bg-surface-container-highest text-on-surface px-4 py-3 text-body-md font-body-md rounded focus:outline-none focus:bg-surface-container focus:text-tertiary text-center" id="card-exp" required="" type="text" value="08/28"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant flex items-center justify-between" for="card-cvc">
+<span>Security CVC</span>
+<span class="material-symbols-outlined text-[14px]" title="3 digits on reverse">help_outline</span>
+</label>
+<input class="bg-surface-container-highest text-on-surface px-4 py-3 text-body-md font-body-md rounded focus:outline-none focus:bg-surface-container focus:text-tertiary text-center" id="card-cvc" required="" type="password" value="•••"/>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<input checked="" class="rounded bg-surface-container-highest border-none text-primary-fixed focus:ring-0" id="billing-match" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface" for="billing-match">Billing address matches delivery coordinates</label>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<button class="w-full h-16 bg-primary-container hover:bg-primary-fixed-dim text-on-primary-fixed font-label-lg text-label-lg uppercase tracking-wider rounded flex items-center justify-center gap-3 transition-transform active:scale-[0.99] shadow-lg" type="submit">
+<span class="font-headline-sm text-headline-sm uppercase text-on-primary-fixed">Complete Order</span>
+<span class="text-on-primary-fixed opacity-60">|</span>
+<span class="font-headline-sm text-headline-sm uppercase text-on-primary-fixed" id="ctaPriceDisplay">$132.20 USD</span>
+<span class="material-symbols-outlined text-[24px]">bolt</span>
+</button>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+<div class="flex items-center gap-2.5 p-3 bg-surface-container-low rounded">
+<span class="material-symbols-outlined text-surface-tint text-[20px]">security</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">256-Bit SSL</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bank-grade vaulting</span>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-3 bg-surface-container-low rounded">
+<span class="material-symbols-outlined text-surface-tint text-[20px]">sync</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">30-Day Field Test</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Wear it, sweat in it</span>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-3 bg-surface-container-low rounded">
+<span class="material-symbols-outlined text-surface-tint text-[20px]">eco</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">100% Carbon Neutral</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Direct offset offsets</span>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-6 sticky top-8">
+<div class="bg-surface-container-low p-6 sm:p-8 flex flex-col gap-6">
+<div class="flex justify-between items-center pb-2">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm uppercase text-tertiary">Order Summary</h2>
+<span class="bg-surface-container-highest font-label-sm text-label-sm px-2 py-0.5 rounded text-surface-tint">2 Gear Units</span>
+</div>
+<button class="font-label-sm text-label-sm uppercase text-surface-tint hover:underline" id="editCartLink" type="button">Edit Bag</button>
+</div>
+<div class="space-y-4">
+<div class="flex gap-4 p-3 bg-surface-container rounded items-center">
+<div class="relative w-16 h-20 bg-surface-container-highest shrink-0 overflow-hidden rounded">
+<img class="w-full h-full object-cover" data-alt="High tech athletic technical running t-shirt in stealth carbon black laid flat with clean aerodynamic seams and breathable laser-cut perforation details in a dark laboratory setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCUfgPKfpbSfOjLfLpp8i7QE9oDvHl8nMAV2kbQ4zWxhs-woK0jWoQC1Fwp2yE5blkYUtdohUd8sdCfVdDFt0QqqRW9Oz-ij7cW84F0k962X1leka06VP91JFeCVwLHh_0obChUhc4fMC59QNzILfXDe2dA5P50Zv917Qo9afQITXDUgqxi5uHw87v4Q_8j8kK7hU_N12_BZmSNR1JqNdjWH8EfqQSI7V9Wt5MNeY"/>
+<span class="absolute top-1 right-1 bg-surface-bright text-tertiary text-[10px] font-label-sm px-1.5 py-0.2 rounded">1x</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex justify-between items-start gap-2">
+<h3 class="font-label-md text-label-md uppercase text-tertiary truncate">AeroDry™ Velocity Performance Tee</h3>
+<span class="font-label-md text-label-md text-tertiary shrink-0">$68.00</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Color: Carbon Black / Size: L</span>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-sm text-label-sm text-surface-tint uppercase bg-on-primary px-1.5 py-0.2 rounded">Ultralight 82g</span>
+</div>
+</div>
+</div>
+<div class="flex gap-4 p-3 bg-surface-container rounded items-center">
+<div class="relative w-16 h-20 bg-surface-container-highest shrink-0 overflow-hidden rounded">
+<img class="w-full h-full object-cover" data-alt="Vibrant high-voltage electric volt seamless running shirt designed for intense athletic speed training shown under dramatic studio spotlights with subtle carbon backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK3gKRO1_Q-7EU1pUDrREnh7FdDPDRNlGbey-3HBSCl0y7Bo6Ael97826NO6sU5__OGKKa7yl4dBfTeLZ4hFQbJNOcJBMCwjQpitnuGtn3EwmUiaYJhetkTBUvVUSiX_1YtHIEbpADuNZ3cSCCe-xpr0gsMiUsK0M2IoB8s0MP6YmzRn_zjUYEGP_LEwKlLCbLgN9sV6Mx3dxi4rpTsR40RM2YWpAeAF2eN0idX48"/>
+<span class="absolute top-1 right-1 bg-surface-bright text-tertiary text-[10px] font-label-sm px-1.5 py-0.2 rounded">1x</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex justify-between items-start gap-2">
+<h3 class="font-label-md text-label-md uppercase text-tertiary truncate">ProStretch Seamless Training Tee</h3>
+<span class="font-label-md text-label-md text-tertiary shrink-0">$68.00</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Color: Pure Volt / Size: L</span>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-sm text-label-sm text-secondary-container text-on-secondary px-1.5 py-0.2 rounded uppercase">Seamless 4-Way</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-highest p-4 rounded flex flex-col gap-3">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Voucher / Member Code</span>
+<div class="flex gap-2">
+<div class="relative flex-1">
+<input class="w-full bg-surface-container text-primary-fixed uppercase font-label-md text-label-md px-3 py-2.5 rounded focus:outline-none tracking-wider" type="text" value="KINETIC10"/>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-primary-fixed text-[18px]">check_circle</span>
+</div>
+<button class="bg-surface-bright hover:bg-surface-container text-on-surface px-4 py-2 font-label-sm text-label-sm uppercase rounded transition-colors" type="button">
+                Apply
+              </button>
+</div>
+<div class="flex items-center gap-1.5 text-primary-fixed font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">redeem</span>
+<span>10% Prototype athlete discount activated (-$13.60)</span>
+</div>
+</div>
+<div class="space-y-2.5 pt-2">
+<div class="flex justify-between text-body-md font-body-md text-on-surface-variant">
+<span>Items Subtotal</span>
+<span class="text-tertiary">$136.00</span>
+</div>
+<div class="flex justify-between text-body-md font-body-md text-primary-fixed">
+<span class="flex items-center gap-1">
+<span>Code Applied: KINETIC10</span>
+</span>
+<span>-$13.60</span>
+</div>
+<div class="flex justify-between text-body-md font-body-md text-on-surface-variant">
+<span>Express Tracked Dispatch</span>
+<span class="text-primary-fixed uppercase font-label-md text-label-md">FREE ($0.00)</span>
+</div>
+<div class="flex justify-between text-body-md font-body-md text-on-surface-variant">
+<span>Estimated Sales Tax (Boulder, CO)</span>
+<span class="text-tertiary">$9.80</span>
+</div>
+<div class="h-px bg-surface-container-highest my-3"></div>
+<div class="flex justify-between items-baseline">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm uppercase text-tertiary">Total Amount</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Includes all regional duties</span>
+</div>
+<span class="font-headline-md text-headline-md text-primary-fixed">$132.20 USD</span>
+</div>
+</div>
+<div class="bg-surface-container p-4 rounded flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-surface-tint text-[22px]">fitness_center</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">Earn 132 Kinetic Points</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Redeemable on next season drop</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-surface-tint uppercase font-bold">+132 PTS</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-4 rounded flex items-center gap-3">
+<div class="w-2.5 h-2.5 bg-primary-fixed rounded-full shrink-0"></div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            Next dispatch cycle departs warehouse in <strong class="text-tertiary">02h 41m</strong>. Orders placed now receive prioritized triage.
+          </span>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 bg-black/80 backdrop-blur-sm z-40 transition-opacity duration-300 opacity-100 flex justify-end" id="drawerBackdrop">
+<div class="w-full max-w-md bg-surface-container-low h-full flex flex-col z-50 transform transition-transform duration-300 translate-x-0 shadow-2xl" id="slideOutDrawer">
+<div class="p-6 bg-surface-container flex justify-between items-center shrink-0">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed text-[24px]">shopping_bag</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm uppercase text-tertiary leading-none">Your Gear Bag</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">2 Selected Performance Pieces</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded bg-surface-container-highest hover:bg-surface-bright text-tertiary flex items-center justify-center transition-colors" id="closeDrawerBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="bg-surface-container-highest px-6 py-3.5 shrink-0 flex flex-col gap-1.5">
+<div class="flex justify-between items-center text-label-sm font-label-sm uppercase">
+<span class="text-primary-fixed flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+<span>You Unlocked Free Shipping!</span>
+</span>
+<span class="text-surface-tint font-bold">100%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-fixed rounded-full w-full"></div>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto p-6 space-y-4">
+<div class="p-4 bg-surface-container rounded flex gap-4 relative">
+<div class="w-20 h-24 bg-surface-container-highest shrink-0 overflow-hidden rounded">
+<img class="w-full h-full object-cover" data-alt="Minimalist athletic apparel aerodynamic carbon black running tee with high visibility reflective accents on display stand" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSb5gD3f4u5hv8xjxnx9EKmagoars-TmFI2EPafLHCsUtEVmAN3o-mXN-h47aMtPCLtiUB_fSQzTnjS3zCZ0hJoWFJqgnydjcQ_xBgOEtRGafSjvoRv675zFy9phCGkc0Byl4B8Yi191uW6sJWIYM-4dRH7bf6Tsge7H5X0sUCH0GBqAOUiNuGMq01wFv3W8oLo0-bX6o6Rdf3RNbsVs7PbWCdSPvmxMKpJL6GhKU"/>
+</div>
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-label-md text-label-md uppercase text-tertiary truncate">AeroDry™ Velocity Tee</h3>
+<button class="text-on-surface-variant hover:text-error transition-colors" title="Remove item" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Carbon Black / Large</span>
+</div>
+<div class="flex justify-between items-center pt-2">
+<div class="flex items-center bg-surface-container-highest rounded">
+<button class="w-7 h-7 flex items-center justify-center text-on-surface hover:text-tertiary text-sm font-bold" type="button">-</button>
+<span class="w-7 text-center font-label-md text-label-md text-tertiary">1</span>
+<button class="w-7 h-7 flex items-center justify-center text-on-surface hover:text-tertiary text-sm font-bold" type="button">+</button>
+</div>
+<span class="font-headline-sm text-headline-sm text-tertiary">$68.00</span>
+</div>
+</div>
+</div>
+<div class="p-4 bg-surface-container rounded flex gap-4 relative">
+<div class="w-20 h-24 bg-surface-container-highest shrink-0 overflow-hidden rounded">
+<img class="w-full h-full object-cover" data-alt="High performance electric volt sports top made from textured breathable technical fabric flat studio shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn1Y-obSy4No1xJnrcvQsSGwiDOgP5qFeMEfv1XxeWzHy-NYMR122VOkN1MhuhpVBEKOpiJas-DpCZHvC4LXwual9LZ8bKaOVgHkqz3SXMVQ1dgWNc9ayKm8mXRF0njyqrVj50KxNHH9lPl96byahlERtT3h_qJKm1pJyY_qIIzr9ZkGU2E29w0-RSfgAmVBCaNrB1UUvqP1zahVkz_CHe9BjTLL-PA5v7WInpJuA"/>
+</div>
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-label-md text-label-md uppercase text-tertiary truncate">ProStretch Training Tee</h3>
+<button class="text-on-surface-variant hover:text-error transition-colors" title="Remove item" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pure Volt / Large</span>
+</div>
+<div class="flex justify-between items-center pt-2">
+<div class="flex items-center bg-surface-container-highest rounded">
+<button class="w-7 h-7 flex items-center justify-center text-on-surface hover:text-tertiary text-sm font-bold" type="button">-</button>
+<span class="w-7 text-center font-label-md text-label-md text-tertiary">1</span>
+<button class="w-7 h-7 flex items-center justify-center text-on-surface hover:text-tertiary text-sm font-bold" type="button">+</button>
+</div>
+<span class="font-headline-sm text-headline-sm text-tertiary">$68.00</span>
+</div>
+</div>
+</div>
+<div class="pt-2">
+<details class="bg-surface-container p-3 rounded group cursor-pointer">
+<summary class="font-label-sm text-label-sm uppercase text-on-surface-variant flex justify-between items-center list-none">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Special Logistics &amp; Access Notes</span>
+</span>
+<span class="material-symbols-outlined text-[16px] group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-3">
+<textarea class="w-full bg-surface-container-highest text-on-surface p-2.5 text-body-sm font-body-sm rounded focus:outline-none" placeholder="Gate codes, locker access, or dispatch instructions..." rows="2"></textarea>
+</div>
+</details>
+</div>
+</div>
+<div class="p-6 bg-surface-container shrink-0 flex flex-col gap-4">
+<div class="space-y-1.5">
+<div class="flex justify-between text-body-md font-body-md text-on-surface-variant">
+<span>Subtotal</span>
+<span class="text-tertiary">$136.00 USD</span>
+</div>
+<div class="flex justify-between text-body-md font-body-md text-surface-tint">
+<span>Shipping</span>
+<span class="uppercase font-label-md text-label-md">FREE</span>
+</div>
+<div class="flex justify-between items-baseline pt-1">
+<span class="font-headline-sm text-headline-sm uppercase text-tertiary">Estimated Total</span>
+<span class="font-headline-sm text-headline-sm text-primary-fixed">$136.00 USD</span>
+</div>
+</div>
+<button class="w-full h-14 bg-primary-container hover:bg-primary-fixed-dim text-on-primary-fixed font-label-lg text-label-lg uppercase tracking-wider rounded flex items-center justify-center gap-2 transition-transform active:scale-[0.99]" id="drawerCheckoutBtn" type="button">
+<span>Proceed To Checkout</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<p class="text-center font-label-sm text-label-sm uppercase text-on-surface-variant">
+          Tax and member coupon calculated in checkout view
+        </p>
+</div>
+</div>
+</div>
+<div class="w-full bg-surface-container-lowest py-8 px-6 mt-12">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-on-surface-variant font-label-sm text-label-sm uppercase">
+<div class="flex items-center gap-2">
+<span class="text-tertiary font-bold tracking-tight">KINETIC LABS INC.</span>
+<span>•</span>
+<span>Boulder Performance Center</span>
+</div>
+<div class="flex gap-6">
+<a class="hover:text-tertiary transition-colors" href="#">Privacy Telemetry</a>
+<a class="hover:text-tertiary transition-colors" href="#">Shipping Framework</a>
+<a class="hover:text-tertiary transition-colors" href="#">Returns &amp; Guarantee</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initCheckoutInteractions() {
+    const backdrop = document.getElementById('drawerBackdrop');
+    const drawer = document.getElementById('slideOutDrawer');
+    const openBtn = document.getElementById('toggleDrawerBtn');
+    const closeBtn = document.getElementById('closeDrawerBtn');
+    const editCartLink = document.getElementById('editCartLink');
+    const drawerCheckoutBtn = document.getElementById('drawerCheckoutBtn');
+
+    function closeDrawer() {
+      if (!drawer || !backdrop) return;
+      drawer.classList.add('translate-x-full');
+      backdrop.classList.add('opacity-0', 'pointer-events-none');
+    }
+
+    function openDrawer() {
+      if (!drawer || !backdrop) return;
+      drawer.classList.remove('translate-x-full');
+      backdrop.classList.remove('opacity-0', 'pointer-events-none');
+    }
+
+    if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+    if (drawerCheckoutBtn) drawerCheckoutBtn.addEventListener('click', closeDrawer);
+    if (openBtn) openBtn.addEventListener('click', openDrawer);
+    if (editCartLink) editCartLink.addEventListener('click', openDrawer);
+
+    if (backdrop) {
+      backdrop.addEventListener('click', (e) => {
+        if (e.target === backdrop) {
+          closeDrawer();
+        }
+      });
+    }
+
+    // Shipping selection dynamic total demonstration
+    const shippingRadios = document.querySelectorAll('input[name="shippingMethod"]');
+    const ctaPriceDisplay = document.getElementById('ctaPriceDisplay');
+
+    shippingRadios.forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        if (e.target.value === 'overnight') {
+          if (ctaPriceDisplay) ctaPriceDisplay.textContent = '$147.20 USD';
+        } else {
+          if (ctaPriceDisplay) ctaPriceDisplay.textContent = '$132.20 USD';
+        }
+      });
+    });
+  })();
+</script></main></body></html>
